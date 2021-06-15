@@ -2,18 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 body{
-    background-image: url("../midia/FundoDelivery.jpg");
+    background-image: url('../midia/FundoDelivery.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    color: white;
+    font-family: 'Comfortaa', cursive;
 }
 
-.paginas{
+nav{
     padding: 20px;
     width: 100%;
     margin: auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Comfortaa', cursive;
 }
 
@@ -32,38 +34,34 @@ a:hover{
     text-decoration-color: #fff;
 }
 
-main{
-    text-align: center;
-    margin: auto;
-    color: #fff;
-    margin-top:150px; 
+table{
+    left:10px; 
+    top:30px;
+    width:1900; 
+    height:900;
+    border-color: white;
+ }
+
+thead{
     font-size: 35px;
-    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    text-align: center;
 }
 
 h1{
-    font-size: 60px;
-    font-family: 'Comfortaa', cursive;
-}
-
-div{
-    left: 100px;
+    font-size: 30px;
+    margin: auto;
+    text-align: right;
     padding: 10px;
 }
 
-input{
-    font-size: 35px;
+p{
+    font-size: 20px;
+    margin: auto;
+    text-align: right;
+    padding: 10px;
 }
 
-button{
-    background-color: rgba(0, 0, 0, 0);
-    border-color: rgba(0, 0, 0, 0);
-    color: #fff;
-    margin-top: 1em;
-    font-size: 60px;
-    font-family: 'Comfortaa', cursive;
-}
-
-button:hover{
-    text-decoration: white;
+img{
+    align-self: baseline;
 }
