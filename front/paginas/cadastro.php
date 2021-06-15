@@ -11,7 +11,7 @@
 <body>
     <nav>
         <a href="imagens.html">Cardápio</a>
-        <a href="videos.html">Faça você mesmo</a>
+        <a href="videos.html">Vídeos Promocionais</a>
         <a href="index.html">Home</a>
     </nav>
     <main>
