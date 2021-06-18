@@ -1,3 +1,5 @@
+<script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
+    
 function enviarDados() {
     var nome = document.getElementById("nome").value;
     var sobrenome = document.getElementById("sobrenome").value;
@@ -61,4 +63,18 @@ function enviarDados() {
             return false;
         }
     }
+
+    $.ajax({
+        type: "POST",
+        dataType: "json",
+        url: "formulario.php",
+        data: {
+            nome: $("#tnome"),
+            sobrenome:
+            endereco:
+            numeroTelefone:
+
+        }
+
+    })
 }
