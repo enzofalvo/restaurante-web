@@ -70,9 +70,9 @@ function enviarDados() {
         url: "formulario.php",
         data: {
             nome: $("#tnome"),
-            sobrenome:
-            endereco:
-            numeroTelefone:
+            sobrenome: $("#tsobrenome"),
+            endereco: $("#tendereco"),
+            numeroTelefone: $("#tnumeroTelefone"),
 
         }
 
