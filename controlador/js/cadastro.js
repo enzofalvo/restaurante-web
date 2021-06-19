@@ -1,4 +1,4 @@
-<script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
+//<script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
     
 function enviarDados() {
     var nome = document.getElementById("nome").value;
@@ -13,7 +13,7 @@ function enviarDados() {
             if(verificaSobrenome(sobrenome)){
                 if(verificaEndereco(endereco)){
                     if(verificaTelefone(numeroTelefone)){
-                        alert("deu tudo certo! fica em paz")
+                        pegaDados();
                     }
                 }
             }
@@ -64,17 +64,18 @@ function enviarDados() {
         }
     }
 
-    $.ajax({
-        type: "POST",
-        dataType: "json",
-        url: "formulario.php",
-        data: {
-            nome: $("#tnome"),
-            sobrenome: $("#tsobrenome"),
-            endereco: $("#tendereco"),
-            numeroTelefone: $("#tnumeroTelefone"),
-
-        }
-
-    })
+    function pegaDados(){
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url:"../../back/php/formulario.php",
+            data:{nome, sobrenome, endereco, numeroTelefone},
+            success:function(json){
+                alert("Deu certo, manda o zap"+numeroTelefone)
+            }
+    
+        })
+    }
+    
+    
 }
