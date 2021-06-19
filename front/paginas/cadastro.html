@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="../midias/favicon.ico" type="image/x-icon">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../estilo/delivery.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
+    
 </head>
 <body>
     <nav>
@@ -22,24 +25,32 @@
             Insira seus dados para finalizar o seu pedido!
         </div>
         <div>
-            Nome: <input type=”text” size="30" placeholder="Insira seu nome"/>
+            <label>Nome: </label><input type=”text” size=30 placeholder="Insira seu nome" id="nome"/>
         </div>
         <div>
-            Cartão de Crédito/Débito: <input type=”text” size="10" placeholder="N° do Cartão"/>
+            <label>Sobrenome: </label><input type=”text” size=30 placeholder="Insira seu sobrenome" id="sobrenome"/>
         </div>
         <div>
-            Endereço: <input type=”text” size="26" placeholder="Insira seu endereço"/>
+            <label>Endereço: </label><input type=”text” size=30 placeholder="Insira seu endereço" id="endereco"/>
         </div>
         <div>
-            Número de Telefone: <input type=”text” size="13" placeholder="Número"/>
+            <label>Telefone: </label><input type=”text” size=30 placeholder="(00) 0000-0000" id="numeroTelefone"/>
+        </div>
+        <div>
+            Forma de pagamento: <select aria-placeholder="Selecione" id="formaPagamento">
+                <option>Dinheiro</option>
+                <option>Cartão de débito</option>
+                <option>Cartão de crédito</option>
+            </select>
         </div>
         <div>
             Gostaria de ficar sabendo de futuras novidades e promoções?
             <br>
             <br>
-            E-Mail: <input type="email" size = 30 name="email"/>
+            <label>E-Mail:</label><input type="email" size = 30 name="email" id="email"/>
           </div>
-        <button>Finalizar</button>
+        <button onclick="enviarDados()">Finalizar</button>
+        <script src="../../controlador/js/cadastro.js"></script>
     </main>      
 </body>
 </html>

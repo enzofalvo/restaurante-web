@@ -8,12 +8,12 @@ body{
     background-size: 100% 100%;
 }
 
-.paginas{
+nav{
     padding: 20px;
     width: 100%;
     margin: auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Comfortaa', cursive;
 }
 
@@ -45,14 +45,30 @@ h1{
     font-size: 60px;
     font-family: 'Comfortaa', cursive;
 }
+    
+div {
+    padding-bottom: 15px;
+}
+  
+label{
+    padding-right: 5px;
+    display: inline-block;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
 
-div{
-    left: 100px;
-    padding: 10px;
+input {
+  display: inline-block;
 }
 
 input{
-    font-size: 35px;
+    font-size: 30px;
+}
+
+select{
+    font-size: 30px;
+    color: darkslategrey;
 }
 
 button{
