@@ -25,10 +25,16 @@
             Insira seus dados para finalizar o seu pedido!
         </div>
         <div>
-            Nome: <input type=”text” size=30 placeholder="Insira seu nome" id="nome"/>
+            <label>Nome: </label><input type=”text” size=30 placeholder="Insira seu nome" id="nome"/>
         </div>
         <div>
-            Sobrenome: <input type=”text” size=30 placeholder="Insira seu sobrenome" id="sobrenome"/>
+            <label>Sobrenome: </label><input type=”text” size=30 placeholder="Insira seu sobrenome" id="sobrenome"/>
+        </div>
+        <div>
+            <label>Endereço: </label><input type=”text” size=30 placeholder="Insira seu endereço" id="endereco"/>
+        </div>
+        <div>
+            <label>Telefone: </label><input type=”text” size=30 placeholder="(00) 0000-0000" id="numeroTelefone"/>
         </div>
         <div>
             Forma de pagamento: <select aria-placeholder="Selecione" id="formaPagamento">
@@ -38,19 +44,13 @@
             </select>
         </div>
         <div>
-            Endereço: <input type=”text” size=30 placeholder="Insira seu endereço" id="endereco"/>
-        </div>
-        <div>
-            Número de Telefone: <input type=”text” size=30 placeholder="(00) 0000-0000" id="numeroTelefone"/>
-        </div>
-        <div>
             Gostaria de ficar sabendo de futuras novidades e promoções?
             <br>
             <br>
-            E-Mail: <input type="email" size = 30 name="email" id="email"/>
+            <label>E-Mail:</label><input type="email" size = 30 name="email" id="email"/>
           </div>
         <button onclick="enviarDados()">Finalizar</button>
-    </main>
-    <script src="../../controlador/js/cadastro.js"></script>
+        <script src="../../controlador/js/cadastro.js"></script>
+    </main>      
 </body>
 </html>

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 body{
-    background-image: url("../midias/FundoDelivery.jpg");
+    background-image: url("../midia/FundoDelivery.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -13,7 +13,7 @@ nav{
     width: 100%;
     margin: auto;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Comfortaa', cursive;
 }
 
@@ -46,9 +46,20 @@ h1{
     font-family: 'Comfortaa', cursive;
 }
     
-div{
-    left: 100px;
-    padding: 10px;
+div {
+    padding-bottom: 15px;
+}
+  
+label{
+    padding-right: 5px;
+    display: inline-block;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+
+input {
+  display: inline-block;
 }
 
 input{
