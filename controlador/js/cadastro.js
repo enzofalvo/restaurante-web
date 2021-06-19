@@ -1,5 +1,3 @@
-//<script src="https://code.jquery.com/jquery-3.6.0.js" type="text/javascript"></script>
-    
 function enviarDados() {
     var nome = document.getElementById("nome").value;
     var sobrenome = document.getElementById("sobrenome").value;
@@ -71,11 +69,9 @@ function enviarDados() {
             url:"../../back/php/formulario.php",
             data:{nome, sobrenome, endereco, numeroTelefone},
             success:function(json){
-                alert("Deu certo, manda o zap"+numeroTelefone)
+                alert("Seja bem vindo " + nome);
             }
     
         })
     }
-    
-    
 }
