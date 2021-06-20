@@ -9,12 +9,12 @@
 	$sobrenome = $_POST["sobrenome"];
 	$endereco = $_POST["endereco"];	
 	$numeroTelefone = $_POST["numeroTelefone"];
-
-	
+	$formaPagamento =  $_POST["formaPagamento"];
+	$email =  $_POST["email"];
 	
 	if($nome != null){
-		$insert = "INSERT INTO cadastro(NOME, SOBRENOME, ENDERECO, NUMERO) 
-		VALUES('$nome','$sobrenome','$endereco','$numeroTelefone')";
+		$insert = "INSERT INTO cadastro(NOME, SOBRENOME, ENDERECO, NUMERO, PAGAMENTO, EMAIL) 
+		VALUES('$nome','$sobrenome','$endereco','$numeroTelefone','$formaPagamento','$email')";
 		
 		mysqli_query($conexao,$insert);
 	}
