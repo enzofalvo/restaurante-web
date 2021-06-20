@@ -69,7 +69,7 @@ function enviarDados() {
             url:"../../back/php/formulario.php",
             data:{nome, sobrenome, endereco, numeroTelefone},
             success:function(json){
-                alert("Seja bem vindo " + nome);
+                alert("Seu cadastro foi realizado com sucesso " + nome);
             }
     
         })
