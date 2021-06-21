@@ -69,7 +69,7 @@ function enviarDados() {
             type: "POST",
             dataType: "json",
             url:"../../back/php/formulario.php",
-            data:{nome, sobrenome, endereco, numeroTelefone,formaPagamento,email},
+            data:{nome, sobrenome, endereco, numeroTelefone, formaPagamento, email},
             success:function(json){
                 alert("Seu cadastro foi realizado com sucesso " + nome);
             }
