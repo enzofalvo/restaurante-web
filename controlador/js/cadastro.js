@@ -3,6 +3,8 @@ function enviarDados() {
     var sobrenome = document.getElementById("sobrenome").value;
     var endereco = document.getElementById("endereco").value;
     var numeroTelefone = document.getElementById("numeroTelefone").value;
+    var formaPagamento = document.getElementById("formaPagamento").value;
+	var email = document.getElementById("email").value;
 
     verificaCampos();
     
@@ -67,9 +69,9 @@ function enviarDados() {
             type: "POST",
             dataType: "json",
             url:"../../back/php/formulario.php",
-            data:{nome, sobrenome, endereco, numeroTelefone},
+            data:{nome, sobrenome, endereco, numeroTelefone, formaPagamento, email},
             success:function(json){
-                alert("Seja bem vindo " + nome);
+                alert("Seu cadastro foi realizado com sucesso " + nome);
             }
     
         })
